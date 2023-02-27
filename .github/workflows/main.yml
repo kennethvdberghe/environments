@@ -29,5 +29,8 @@ jobs:
           node-version: 18
 
       # Runs a single command using the runners shell
+      - name: Install dependencies
+        run: npm i
+
       - name: Run tests
-        run: echo Hello, world!
+        run: npm t 
