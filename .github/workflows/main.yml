@@ -35,3 +35,5 @@ jobs:
 
       - name: Run tests
         run: npm t 
+        env:
+          VITE_APP_HELLO: ${{ vars.VITE_APP_HELLO }}
